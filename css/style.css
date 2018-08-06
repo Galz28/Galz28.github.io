@@ -1,0 +1,67 @@
+@font-face{
+	font-family: gpixel;
+	src: url(../fonts/Minecraftia-Regular.ttf);
+}
+@font-face{
+	font-family: gsans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+body{
+	margin: 0;
+}
+h1{
+	text-align: center;
+	color: #ffffff;
+	margin: 0;
+}
+#navbar{
+	background-color: #1E1E1E;
+	margin:0;
+	height: 70px;
+}
+#glogo{
+	position: absolute;
+	top: 5px;
+	left: 200px;
+}
+#navmenu{
+	position: absolute;
+	top: 15px;
+	left: 800px;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+li{
+	display: inline;
+	overflow: hidden;
+}
+li a{
+	color: #ffffff;
+	float: left;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-family: gsans;
+	font-size: 15px;
+	padding: 10px 20px;
+}
+li a:hover{
+	border-bottom: 3px solid #00B1FF;
+	/*background-color: #000000;*/
+	color: #FFC200;
+}
+.pages{
+	min-height: 630px;
+}
+#home{
+	background-color: #ffffff;
+}
+#galz{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
