@@ -7,27 +7,24 @@
 	src: url(../fonts/OpenSans-Regular.ttf);
 }
 body{
-	margin: 0;
+	margin: 0 auto;
 }
 h1{
 	text-align: center;
 	color: #ffffff;
 	margin: 0;
 }
-#navbar{
+.navbar{
 	background-color: #1E1E1E;
-	margin:0;
 	height: 70px;
 }
 #glogo{
-	position: absolute;
-	top: 5px;
-	left: 200px;
+	
 }
+
 #navmenu{
-	position: absolute;
-	top: 15px;
-	left: 800px;
+	margin-top: 24px;
+	/*margin-left: 70px;*/
 }
 ul{
 	list-style-type: none;
@@ -50,6 +47,7 @@ li a{
 }
 li a:hover{
 	border-bottom: 3px solid #00B1FF;
+	text-decoration: none;
 	/*background-color: #000000;*/
 	color: #FFC200;
 }
@@ -64,4 +62,6 @@ li a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
+	width: 250px;
+	height: 300px;
 }
