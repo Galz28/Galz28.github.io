@@ -120,12 +120,12 @@ body{
 }
 
 #galz{
-	/*margin-top: 70px;
+	margin-top: 70px;
 	margin-right: 20px;
-	float: right;*/
-	position: absolute;
-	top: 70px;
-	left: 20px;
+	float: right;
+	/*position: absolute;
+	top: 70px;*/
+	/*left: 20px;*/
 	width: 480px;
 	height: 560px;
 }
