@@ -94,6 +94,7 @@ body{
 	float: left;
 	margin-top: 80px;
 	margin-left: 100px;
+	width: 700px;
 }
 
 #completeName{
@@ -133,7 +134,7 @@ body{
 }
 
 .intro p{
-	color: #6cff00;
+	color: #c6c6c6;
 	font-size: 1.7em;
 	font-family: "MS Reference Sans Serif Regular";	
 }
