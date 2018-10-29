@@ -2,66 +2,168 @@
 	font-family: gpixel;
 	src: url(../fonts/Minecraftia-Regular.ttf);
 }
+
 @font-face{
 	font-family: gsans;
 	src: url(../fonts/OpenSans-Regular.ttf);
 }
-body{
-	margin: 0 auto;
-}
-h1{
-	text-align: center;
-	color: #ffffff;
-	margin: 0;
-}
-.navbar{
-	background-color: #1E1E1E;
-	height: 70px;
-}
-#glogo{
-	
+
+@font-face{
+	font-family: "Spy Agency Regular";
+	src: url(../fonts/spyagencyv3.ttf);
 }
 
-#navmenu{
-	margin-top: 24px;
-	/*margin-left: 70px;*/
+@font-face{
+	font-family: "MS Reference Sans Serif Regular";
+	src: url(../fonts/REFSAN.ttf);
 }
-ul{
-	list-style-type: none;
-	padding: 0;
+
+body{
 	margin: 0;
 }
-li{
-	display: inline;
-	overflow: hidden;
-}
-li a{
-	color: #ffffff;
+
+#glogo{
+	width: 70px;
+	height: 50px;
+	margin-left: 50px;
+	margin-top: 8px;
 	float: left;
+}
+
+#glogodef{
+	font-size: 1.5em;
+	color: #FFB600;
+	margin-left: 80px; 
+	float: left;
+}
+
+.navbar{
+	/*background-color: #1E1E1E;*/
+	overflow: hidden;
+	position: fixed;
+	height: 65px;
+	width: 100%;
+	top: 0;
+	background-color: #2D2D2D;
+}
+
+.navmenu {
+	margin-right: 50px;
+	margin-top: 24px;
+}
+
+.navmenu ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navmenu a{
+	color: #969696;
+	float: right;
 	display: block;
 	text-decoration: none;
 	text-align: center;
 	font-family: gsans;
-	font-size: 15px;
-	padding: 10px 20px;
+	font-size: 0.9em;
+	padding: 10px 23px;
 }
-li a:hover{
-	border-bottom: 3px solid #00B1FF;
+
+.navmenu a:hover{
+	border-bottom: 2px solid #00B1FF;
 	text-decoration: none;
-	/*background-color: #000000;*/
 	color: #FFC200;
 }
-.pages{
-	min-height: 630px;
+
+.navmenu a.active{
+	border-bottom: 2px solid #00B1FF;
+	text-decoration: none;
+	color: #FFC200;
 }
+.main{
+	margin-top: 65px;
+  	width: 100%;
+}
+
 #home{
-	background-color: #ffffff;
+	background-image: linear-gradient(to right, #000000, #474747);
+	height: 630px;
 }
+.NameAndOccupation{
+	text-align: center;
+	float: left;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+#completeName{
+	font-family: "Spy Agency Regular";
+	font-size: 2.5em;
+	color: #a4a4a4;
+	margin: 0;
+}
+
+#occupation{
+	font-family: "MS Reference Sans Serif Regular";
+	color: #515151;
+	margin-top: 8px;
+}
+
+#hhline{
+	width: 700px;
+	margin-top: 180px;
+	margin-left: 50px;
+}
+
 #galz{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 50px;
+	margin-top: 70px;
+	margin-right: 20px;
+	float: right;
+	width: 480px;
+	height: 560px;
+	background-blend-mode: lighten;
+}
+
+.intro{
+	margin-top: 50px;
+	margin-left: 50px;
+	text-indent: 12%;
+	text-align: justify;
+	width: 700px
+}
+
+.intro p{
+	color: #6cff00;
+	font-size: 1.7em;
+	font-family: "MS Reference Sans Serif Regular";	
+}
+
+.intro button{
+	font-size: 1.5em;
+	float: right;
+	border: none;
+	height: 45px;
 	width: 250px;
-	height: 300px;
+	background-color: #FFB600;
+	border-radius: 20px;
+	/*margin-top: 180px;*/
+	margin-right: 50px;
+}
+
+#about{
+	background-image: linear-gradient(to right, #84ff00, #005202);
+	height: 630px;	
+}
+
+#skills{
+	background-image: linear-gradient(to right, #ff4e00, #fff000);
+	height: 630px;
+}
+#projects{
+	background-image: linear-gradient(to right, #ff0000, #720000);
+	height: 630px;
+}
+#contact{
+	background-image: linear-gradient(to right, #000000, #474747);
+	height: 630px;
 }

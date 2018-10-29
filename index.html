@@ -4,32 +4,62 @@
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+	  		jQuery('ul li a').click(function(){
+	    		jQuery('li a').removeClass("active");
+	    		jQuery(this).addClass("active");
+	    	});
+		});	
+	</script>
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row navbar">
-			<div class="col-sm-2 col-md-4 col-lg-6 col-xl-7">
-				<img id="glogo" src="res/img/Gblue.png" width="80px" height="60px">	
-			</div>
-			<div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
-				<div id="navmenu">
-					<ul>
-						<li><a href="">home</a></li>
-						<li><a href="">about</a></li>
-						<li><a href="">skills</a></li>
-						<li><a href="">projects</a></li>
-						<li><a href="">contact</a></li>
-					</ul>
-				</div>	
-			</div>
+	
+	<div class="navbar">
+		<img id="glogo" src="res/img/Gyellow.png">
+		<pre id="glogodef">G   A   L   Z</pre>	
+		<!-- <a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#skills">Skills</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a> -->
+		<div class="navmenu">
+			<ul>
+				<li><a class="menuitem" href="#contact">Contact</a></li>
+				<li><a class="menuitem" href="#projects">Projects</a></li>
+				<li><a class="menuitem" href="#skills">Skills</a></li>
+				<li><a class="menuitem" href="#about">About</a></li>
+				<li><a class="menuitem active" href="#home">Home</a></li>
+			</ul>		
 		</div>
-		<div class="row">
-			<div id="home" class="pages col-xl-12">
-				<img id="galz" src="res/img/galz.png">
-			</div>	
 		</div>
-	</div>	
+	</div>
+	<div class="main">
+		<div id="home">
+			<img id="galz" src="res/img/GalzJr2.png">
+			<div class="NameAndOccupation">
+				<p id="completeName">EDGARDO E GUMPAY JR</p>
+				<p id="occupation">Programmer / Developer / Graphic Designer</p>
+			</div>
+			<hr id="hhline">
+			<div class="intro">
+				<p>Hi their, you can call me "Galz". I'm a Software Developer at the same time a Graphic Designer.</p>
+				<button>Download CV</button>
+			</div>
+		</div>	
+		<div id="about">
+
+		</div>
+		<div id="skills">
+				
+		</div>
+		<div id="projects">
+			
+		</div>
+		<div id="contact">
+			
+		</div>
+	</div>
+	
 </body>
 </html>
