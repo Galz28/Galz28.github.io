@@ -90,7 +90,6 @@ body{
 	height: 630px;
 	position: relative;
 	z-index: -1;
-
 }
 
 .NameAndTitle{
@@ -121,11 +120,12 @@ body{
 }
 
 #galz{
-	/*margin-top: 70px;
-	margin-right: 20px;*/
-	/*float: right;*/
-	position: absolute;
+	margin-top: 70px;
+	margin-right: 20px;
+	float: right;
+	/*position: absolute;
 	top: 70px;
+	left: 20px;*/
 	width: 480px;
 	height: 560px;
 }
