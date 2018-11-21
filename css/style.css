@@ -21,7 +21,7 @@
 body{
 	margin: 0;
 	text-align: center;
-	background-color: #cccccc;
+	background-color: #e0e0e0;
 	/*background-color: #e0e0e0;*/
 	/*background-image: linear-gradient(to right, #858585, #202020);*/
 }
@@ -192,21 +192,61 @@ body{
 	/*background-image: linear-gradient(to right, #ff4e00, #fff000);*/
 	height: 630px;
 }
+
 #projects{
 	/*background-image: linear-gradient(to right, #ff0000, #720000);*/
 	height: 630px;
 }
+
 #contact{
-	/*background-color: #2D2D2D;*/
+	/*background-color: #cccccc; */
 	/*background-image: linear-gradient(to right, #000000, #474747);*/
+	/*height: 630px;*/
 	height: 630px;
+	position: relative;
+	z-index: 1;
+}
+
+input[type="text"], input[type="email"], textarea{
+	/*width: 300px;
+	padding: 12px;
+	border-radius: 4px;
+	box-sizing: border-box;*/
+
+	width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact form{
+	top: 100px;
+	width: 500px;
+	text-align: left;
+	position: relative;
+	margin: 0 auto;
+
+
 }
 #gfooter{
 	position: absolute;
 	width: 100%;
-	background-color: #5b5b5b;
+	background-color: #2D2D2D;
 	font-family: "MS Reference Sans Serif Regular";	
 	font-size: 0.8em;
 	text-align: center;
-	color: #252525;
+	color: #969696;
 }
