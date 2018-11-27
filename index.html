@@ -35,16 +35,19 @@
 	</div>
 	<div class="wrap">
 		<div id="home">
-			<div class="NameAndTitle">
-				<p id="completeName">EDGARDO E GUMPAY JR</p>
-				<p id="occupation">Programmer / Developer / GraphicDesigner</p>
-				<hr id="hhline">
-				<div class="intro">
-						<p>Hi there, you can call me "Galz". I'm a Software Developer at the same time a Graphic Designer.</p>
-					<button>Download CV</button>
-				</div>	
+			<div id="hinnercon">
+				<div class="NameAndTitle">
+					<p id="completeName">EDGARDO E GUMPAY JR</p>
+					<p id="occupation">Software/Web Developer, Graphic Artist/Designer</p>
+					<hr id="hhline">
+					<div class="intro">
+							<p>Hi there, you can call me "Galz". I'm a Software Developer at the same time a Graphic Designer.</p>
+						<button>Download CV</button>
+					</div>	
+				</div>
+				<img id="galz" src="res/img/GalzJr1.png">
 			</div>
-			<img id="galz" src="res/img/GalzJr1.png">
+			
 		</div>	
 		<div id="about">
 		</div>
@@ -53,23 +56,27 @@
 		<div id="projects">				
 		</div>
 		<div id="contact">
-			<form method="POST" action="https://formspree.io/eegjr28@gmail.com">
-				<label>Name</label>
-				<input name="name" type="text" placeholder="Your complete name . . .">
-					
-				<label>E-mail</label>
-				<input name="email" type="email" placeholder="Your e-mail address . . .">
-					
-				<label>Message</label>
-				<textarea name="message" placeholder="Your message . . ." style="height: 150px"></textarea>
+			<div id="cinnerwrap">
+				<form method="POST" action="https://formspree.io/eegjr28@gmail.com">
+					<label>Name *</label>
+					<input name="name" type="text" placeholder="COMPLETE NAME . . ." required>
+						
+					<label>E-mail *</label>
+					<input name="email" type="email" placeholder="E-MAIL ADDRESS . . ." required>
+						
+					<label>Message *</label>
+					<textarea name="message" placeholder="MESSAGE . . ." style="height: 150px" required></textarea>
 
-				<input type="submit" value="Send">
-			</form>
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+		<div id="gfooter">
+			<div id="gfinnerwrap">
+				<p> © <span style="font-style: italic"></span> 2018 Galz </p>
+				<p><span style="font-style: italic">All rights reserved. Powered by </span><span style="color: #d8d8d8">Github Pages</span></p>
+			</div>
 		</div>	
-	</div>
-	<div id="gfooter">
-		<p> © <span style="font-style: italic">Copyright</span> 2018 - 2019 </p>
-		<p><span style="font-style: italic">All rights reserved. Powered by </span><span style="color: #d8d8d8">Github Pages</span></p>
 	</div>
 </body>
 </html>
