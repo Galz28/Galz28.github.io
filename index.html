@@ -2,81 +2,64 @@
 <html>
 <head>
 	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/jquery-3.3.1.js"></script>
-	<script>
-		jQuery(document).ready(function(){
-	  		jQuery('ul li a').click(function(){
-	    		jQuery('li a').removeClass("active");
-	    		jQuery(this).addClass("active");
-	    	});
-		});	
-	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.min.js" />
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<div class="navbar">
-		<img id="glogo" src="res/img/Gyellow.png">
-		<pre id="glogodef">G   A   L   Z</pre>	
-		<!-- <a href="#home">Home</a>
-		<a href="#about">About</a>
-		<a href="#skills">Skills</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact</a> -->
-		<div class="navmenu">
-			<ul>
-				<li><a class="menuitem" href="#contact">Contact</a></li>
-				<li><a class="menuitem" href="#projects">Projects</a></li>
-				<li><a class="menuitem" href="#skills">Skills</a></li>
-				<li><a class="menuitem" href="#about" >About</a></li>
-				<li><a class="menuitem active" href="#home">Home</a></li>
-			</ul>		
+	
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top px-5">
+		
+		<a class="navbar-brand" href="#">
+			<img src="img/glogo-b.png" alt="Logo" width="50px">
+		</a>
+		
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item" >
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Works</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+		</ul>
+		<div class="social">
+			<a class="navbar-brand">
+				<img src="img/social-icons/facebook.png" width="25px">
+			</a>
+			<a class="navbar-brand">
+				<img src="img/social-icons/twitter.png" width="25px">
+			</a>
+			<a class="navbar-brand">
+				<img src="img/social-icons/linkedin.png" width="25px">
+			</a>
+			<a class="navbar-brand">
+				<img src="img/social-icons/gplus.png" width="25px">
+			</a>
+			<a class="navbar-brand">
+				<img src="img/social-icons/git.png" width="25px">
+			</a>
 		</div>
-	</div>
-	<div class="wrap">
-		<div id="home">
-			<div id="hinnercon">
-				<div class="NameAndTitle">
-					<p id="completeName">EDGARDO E GUMPAY JR</p>
-					<p id="occupation">Software/Web Developer, Graphic Artist/Designer</p>
-					<hr id="hhline">
-					<div class="intro">
-							<p>Hi there, you can call me "Galz". I'm a Software Developer at the same time a Graphic Designer.</p>
-						<button>Download CV</button>
-					</div>	
-				</div>
-				<img id="galz" src="res/img/GalzJr1.png">
-			</div>
-			
-		</div>	
-		<div id="about">
-		</div>
-		<div id="skills">					
-		</div>
-		<div id="projects">				
-		</div>
-		<div id="contact">
-			<div id="cinnerwrap">
-				<form method="POST" action="https://formspree.io/eegjr28@gmail.com">
-					<label>Name *</label>
-					<input name="name" type="text" placeholder="COMPLETE NAME . . ." required>
-						
-					<label>E-mail *</label>
-					<input name="email" type="email" placeholder="E-MAIL ADDRESS . . ." required>
-						
-					<label>Message *</label>
-					<textarea name="message" placeholder="MESSAGE . . ." style="height: 150px" required></textarea>
+		<button type="button" class="bg-color-b">Hire</button>
 
-					<input type="submit" value="Send">
-				</form>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-12" align="center">
+				<img class="shadow" id="mypic" src="img/eegjr.png" width="250px" height="250px">
 			</div>
 		</div>
-		<div id="gfooter">
-			<div id="gfinnerwrap">
-				<p> © <span style="font-style: italic"></span> 2018 Galz </p>
-				<p><span style="font-style: italic">All rights reserved. Powered by </span><span style="color: #d8d8d8">Github Pages</span></p>
-			</div>
-		</div>	
 	</div>
+	
+	<div class="container-fluid">
+	</div>
+
 </body>
 </html>
