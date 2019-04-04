@@ -31,35 +31,83 @@
 			</li>
 		</ul>
 		<div class="social">
-			<a class="navbar-brand">
+			<a class="navbar-brand" href="https://www.facebook.com/profile.php?id=100001726836258" target="_blank">
 				<img src="img/social-icons/facebook.png" width="25px">
 			</a>
 			<a class="navbar-brand">
 				<img src="img/social-icons/twitter.png" width="25px">
 			</a>
-			<a class="navbar-brand">
+			<a class="navbar-brand" href="https://www.linkedin.com/in/edgardo-gumpay-jr-8b6064100" target="_blank">
 				<img src="img/social-icons/linkedin.png" width="25px">
 			</a>
-			<a class="navbar-brand">
-				<img src="img/social-icons/gplus.png" width="25px">
-			</a>
-			<a class="navbar-brand">
+			<a class="navbar-brand" href="https://github.com/galz28" target="_blank">
 				<img src="img/social-icons/git.png" width="25px">
 			</a>
 		</div>
 		<button type="button" class="bg-color-b">Hire</button>
-
 	</nav>
+
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xl-12" align="center">
-				<img class="shadow" id="mypic" src="img/eegjr.png" width="250px" height="250px">
+			<div class="col-xs-12 col-xl-12" align="center">
+				<div id="home">
+					<img class="shadow" id="mypic" src="img/eegjr.png" width="250px" height="250px">
+					<div class="col-xs-12 col-xl-12" align="center">
+						<h4>Hi, I'm Galz. I'm a Software Developer/Graphic Designer.</h4>
+						<button>DOWNLOAD CV</button>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<div id="contact" class="col-xs-12 col-xl-12">
+				<div class="form-container shadow">
+				<form method="POST" action="https://formspree.io/eegjr28@gmail.com" class="needs-validation" novalidate>
+					<div class="form-group">
+					 	<label for="uname">Name:</label>
+					    <input type="text" class="form-control" id="name" placeholder="Enter complete name" name="name" required>
+					 	<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+					<div class="form-group">
+					 	<label for="pwd">E-mail:</label>
+					    <input type="email" class="form-control" id="pwd" placeholder="Enter email address" name="email" required>
+					 	<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+					<div class="form-group">
+					 	<label for="message">Message:</label>
+					 	<textarea class="form-control" id="message" name="message" placeholder="Message . . ." style="height: 150px" required></textarea>
+					 	<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+					<button type="submit" class="btn" >Send</button>
+				</form>
+				</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="container-fluid">
-	</div>
+
+	<script>
+		// Disable form submissions if there are invalid fields
+		(function() {
+  			'use strict';
+  			window.addEventListener('load', function() {
+    		// Get the forms we want to add validation styles to
+    			var forms = document.getElementsByClassName('needs-validation');
+    		// Loop over them and prevent submission
+    			var validation = Array.prototype.filter.call(forms, function(form) {
+      				form.addEventListener('submit', function(event) {
+        				if (form.checkValidity() === false) {
+          					event.preventDefault();
+          					event.stopPropagation();
+        				}
+        				form.classList.add('was-validated');
+      				}, false);
+    			});
+  			}, false);
+		})();
+	</script>
+
 
 </body>
 </html>
