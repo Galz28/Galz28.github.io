@@ -3,34 +3,60 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.min.js" />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.3.1.js"></script>
+	<script>
+
+		jQuery(document).ready(function(){
+	  		jQuery('ul li a').click(function(){
+	    		jQuery('li a').removeClass("active");
+	    		jQuery(this).addClass("active");
+	    	});
+		});
+
+		$(document).ready(function(){
+  			$("a").on('click', function(event) {
+    			if (this.hash !== "") {
+      				event.preventDefault();
+      				var hash = this.hash;
+     				$('html, body').animate({
+        				scrollTop: $(hash).offset().top
+      				}, 800, function(){
+      					window.location.hash = hash;
+      				});
+    			}
+  			});
+		});
+
+	</script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 	
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top px-5">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top px-3">
 		
 		<a class="navbar-brand" href="#">
 			<img src="img/glogo-b.png" alt="Logo" width="50px">
 		</a>
-		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"><!-- <img src="img/hamburger.png" width="40" height="30"> --></span></button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item" >
-				<a class="nav-link" href="#">Home</a>
+				<a class="nav-link" href="#home">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">About</a>
+				<a class="nav-link" href="#about">About</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Works</a>
+				<a class="nav-link" href="#works">Works</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
+				<a class="nav-link" href="#contact">Contact</a>
 			</li>
 		</ul>
-		<div class="social">
+
+		<!-- <div class="social">
 			<a class="navbar-brand" href="https://www.facebook.com/profile.php?id=100001726836258" target="_blank">
 				<img src="img/social-icons/facebook.png" width="25px">
 			</a>
@@ -43,52 +69,166 @@
 			<a class="navbar-brand" href="https://github.com/galz28" target="_blank">
 				<img src="img/social-icons/git.png" width="25px">
 			</a>
-		</div>
+		</div> -->
+		
 		<button type="button" class="bg-color-b">Hire</button>
+		</div>
 	</nav>
-
-	<div class="container-fluid">
+	<!-- Home Section -->
+	<div id="home" class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-xl-12" align="center">
-				<div id="home">
-					<img class="shadow" id="mypic" src="img/eegjr.png" width="250px" height="250px">
-					<div class="col-xs-12 col-xl-12" align="center">
-						<h4>Hi, I'm Galz. I'm a Software Developer/Graphic Designer.</h4>
-						<button>DOWNLOAD CV</button>
+				<img class="shadow" id="mypic" src="img/eegjr.png" width="250px" height="250px">
+				<div align="center" style="display: block">
+					<div>Hi, I'm Galz, a Software Developer and Graphic Designer who loves innovation and design.</div>
+					<button>DOWNLOAD CV</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!-- End Home Section -->
+	<hr class="margin-lr" style="border-top: 1px dashed #343A40">
+	<div id="about" class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-xl-12">
+				<div class="shadow about-container margin-lr">
+					<h1>About Me</h1>
+					<hr>
+					<div class="justify" style="text-indent: 5em; margin: 0px 50px 0px 50px" align="justify">My name is Edgardo E. Gumpay Jr., a graduate of BS Information Technology from Saint Joseph College Maasin City Southern Leyte Philippines. I am passionate in developing new things from simple to complex one. I love engaging new technologies, techniques and processes on software development. A part of me is an Artist. I love creating unique graphic designs and graphic arts. I've been a Developer and Graphic Designer for almost four years now and still learning new things to improve my skills and capabilities in software development and graphic design to make great ideas come into reality.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="margin-lr" style="border-top: 1px dashed #343A40">
+	<div id="works" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-lg-4 col-xl-4" align="center">
+				<img class="img-responsive" width="200" height="150" src="img/desktopdevelopment.png">
+				<p onclick="hidemobweb()" data-toggle="collapse" data-target="#desktopdev" style="padding-top: 20px">DESKTOP</p>
+			</div>
+			<div class="col-md-4 col-lg-4  col-xl-4" align="center">
+				<img class="img-responsive" width="160" height="150" src="img/mobiledevelopment.png">
+				<p onclick="hidedeskweb()" data-toggle="collapse" data-target="#mobiledev" style="padding-top: 20px">MOBILE</p>
+			</div>
+			<div class="col-md-4 col-lg-4 col-xl-4" align="center">
+				<img class="img-responsive" width="200" height="150" src="img/webdevelopment.png">
+				<p onclick="hidedeskmob()" data-toggle="collapse" data-target="#webdev" style="padding-top: 20px">WEB</p>
+			</div>
+		</div>
+		<!-- <div class="row">
+			<div class="col-xl-12">
+				<div id="desktopdev" class="collapse margin-lr" style="padding-top: 30px;padding-bottom: 30px">
+					<div style="margin-left: 50px">
+						<div style="color:#ffffff">Modern Calculator App</div>
 					</div>
 				</div>
-			</div>			
-		</div>
+			</div>
+			<div class="col-xl-12">
+				<div id="mobiledev" class="collapse margin-lr">
+					<div height="300">
+						2
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-12">
+				<div id="webdev" class="collapse margin-lr">
+					3
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<hr class="margin-lr" style="border-top: 1px dashed #343A40">
+	<div id="contact" class="container-fluid">
 		<div class="row">
-			<div id="contact" class="col-xs-12 col-xl-12">
+			<div class="col-xs-12 col-xl-12">
 				<div class="form-container shadow">
 				<form method="POST" action="https://formspree.io/eegjr28@gmail.com" class="needs-validation" novalidate>
+
 					<div class="form-group">
 					 	<label for="uname">Name:</label>
 					    <input type="text" class="form-control" id="name" placeholder="Enter complete name" name="name" required>
 					 	<div class="valid-feedback">Valid.</div>
 						<div class="invalid-feedback">Please fill out this field.</div>
 					</div>
+
 					<div class="form-group">
 					 	<label for="pwd">E-mail:</label>
 					    <input type="email" class="form-control" id="pwd" placeholder="Enter email address" name="email" required>
 					 	<div class="valid-feedback">Valid.</div>
 						<div class="invalid-feedback">Please fill out this field.</div>
 					</div>
+
 					<div class="form-group">
 					 	<label for="message">Message:</label>
 					 	<textarea class="form-control" id="message" name="message" placeholder="Message . . ." style="height: 150px" required></textarea>
 					 	<div class="invalid-feedback">Please fill out this field.</div>
 					</div>
+
 					<button type="submit" class="btn" >Send</button>
-				</form>
-				</div>
-			</div>
-		</div>
+				
+				</form>				
+				</div>			
+			</div>		
+		</div>	
 	</div>
 
 	<script>
+		
+		function hidedeskweb() {
+ 			
+ 			var mobiledev = document.getElementById("mobiledev");
+ 		 	var desktopdev = document.getElementById("desktopdev");
+ 		 	var webdev = document.getElementById("webdev");
+
+
+  			if (desktopdev.style.display === "none" && webdev.style.display === "none") {
+    			mobiledev.style.display = "block";
+ 			}
+ 			else{
+ 				mobiledev.style.display = "block";
+    			desktopdev.style.display = "none";
+    			webdev.style.display = "none";
+  			}
+		}
+
+		function hidemobweb() {
+ 			
+ 			var mobiledev = document.getElementById("mobiledev");
+ 		 	var desktopdev = document.getElementById("desktopdev");
+ 		 	var webdev = document.getElementById("webdev");
+
+
+  			if (mobiledev.style.display === "none" && webdev.style.display === "none") {
+    			desktopdev.style.display = "block";
+ 			}
+ 			else{
+ 				desktopdev.style.display = "block";
+    			mobiledev.style.display = "none";
+    			webdev.style.display = "none";
+  			}
+		}
+
+		function hidedeskmob() {
+ 			
+ 			var mobiledev = document.getElementById("mobiledev");
+ 		 	var desktopdev = document.getElementById("desktopdev");
+ 		 	var webdev = document.getElementById("webdev");
+
+
+  			if (webdev.style.display === "none") {
+    			mobiledev.style.display = "none";
+    			desktopdev.style.display = "none";
+    			webdev.style.display = "block";
+
+ 			}
+ 			else{
+ 				webdev.style.display = "block";
+  			}
+		}
+
+
 		// Disable form submissions if there are invalid fields
+
 		(function() {
   			'use strict';
   			window.addEventListener('load', function() {
@@ -108,6 +248,7 @@
 		})();
 	</script>
 
+	<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
