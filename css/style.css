@@ -94,6 +94,12 @@ h4 {
 	width: 650px;
 }
 
+#home div div div div {
+	font-size: 1.7em;
+	font-family: ubuntu-r;
+	width: 700px;
+	margin-top: 20px;
+}
 div div div button {
 	font-family: ubuntu-r;
 	font-size: 1.5em;
